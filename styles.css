@@ -212,7 +212,7 @@ header {
     justify-content: space-between; /* Space out elements */
     background: white;
     border-radius: 12px; /* More rounded corners for a softer look */
-    padding: 1.5rem;
+    padding: .7rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -231,9 +231,7 @@ header {
 }
 
 .product-card p {
-    font-size: 1.2rem; /* Font size for price */
-    color: #e67e22; /* Warm Orange */
-    font-weight: bold; /* Bold for emphasis */
+    color: #282c30; 
 }
 
 .product-card:hover {
@@ -303,20 +301,45 @@ h1 {
     margin-bottom: 1rem;
 }
 
-p {
-    margin-bottom: 1rem; /* Spacing between paragraphs */
-}
+/* p {
+    margin-bottom: 1rem;
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .products {
-        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for smaller screens */
+        grid-template-columns: repeat(1, 1fr); /* Change to 2 columns for smaller screens */
         padding: 12px;
         gap: 10px; /* Adjust gap for smaller screens */
     }
 
+    .product-card {
+        display: flex;
+        flex-direction: row; /* Stack image and text vertically */
+        align-items: center; /* Center align content */
+        justify-content: start; /* Space out elements */
+        background: white;
+        border-radius: 12px; /* More rounded corners for a softer look */
+        padding: .5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card img {
+        border-radius: 12px; /* Match the card's border radius */
+        max-height: 250px; /* Increase image height for better visibility */
+        width: 100px; /* Ensure image takes the full width */
+        height: 80px;
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    .product-card p{
+        font-size: .9rem;
+    }
+    
+
     .purchase-info {
-        font-size: 11px;
+       margin-left: 1.7rem;
     }
 
     /* .button-container {
