@@ -1,0 +1,639 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding-bottom: 60px; /* Adjust according to footer height */
+    padding-top: 48px; /* Adjust according to header height */
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center vertically */
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+    /* background: linear-gradient(135deg, #2e303b, #2c3e50); */
+     /* background-color: #1abc9c; */
+     background: linear-gradient(135deg, #293c78, #0f53c0);
+}
+
+
+
+
+/* Hamburger Button */
+.hamburger {
+    display: none; /* Initially hide for larger screens */
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Padding around the button */
+    transition: transform 0.3s; /* Smooth transform effect */
+}
+
+/* Active Hamburger Button */
+.hamburger.cross {
+    transform: rotate(180deg); /* Rotate for a nice effect */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    transition: max-height 0.3s ease-in-out; /* Smooth transition for dropdown */
+}
+
+/* Show the menu when active */
+.nav-links.active {
+    display: block; /* Show when active */
+    flex-direction: column; /* Stack links vertically */
+    background-color: #333; /* Background color for dropdown */
+    position: absolute; /* Position it under the header */
+    top: 50px; /* Adjust based on your header height */
+    width: 100%; /* Full width */
+    border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+    padding: 10px 0; /* Padding for dropdown */
+    z-index: 999; /* Ensure it appears above other elements */
+}
+
+/* Navigation Links Styling */
+.nav-links li {
+    margin: 0; /* No margin needed for stacked layout */
+}
+
+.nav-links li a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* No underline */
+    padding: 15px 20px; /* Padding for links */
+    display: block; /* Block display for full area click */
+    transition: background 0.3s, color 0.3s; /* Smooth background and color transition */
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight background change on hover */
+    color: #e67e22; /* Change color on hover */
+}
+
+/* Media query to show the hamburger on smaller screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide by default in mobile */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+        background: none; /* Transparent background */
+        color: white;
+        cursor: pointer; /* Pointer cursor */
+    }
+}
+
+
+
+
+
+
+.logo {
+    display: flex; /* Flex layout for logo */
+    align-items: center; /* Center icon and text */
+    color: #fff;
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ecf0f1, #bdc3c7);
+    padding: 3rem; /* Increased padding for emphasis */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #2c3e50; /* Deep Blue */
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #e67e22; /* Warm Orange */
+    margin: 1rem 0;
+}
+
+.hero-content .btn {
+    background-color: #e67e22; /* Warm Orange */
+    color: white;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #d35400; /* Darker Orange */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light Gray */
+    gap: 2rem;
+}
+
+.feature {
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature i {
+    font-size: 2rem; /* Adjust icon size */
+    color: #1c5ec9;
+    margin-bottom: 0.5rem; /* Space between icon and text */
+}
+
+/* Products Section */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align content */
+    justify-content: space-between; /* Space out elements */
+    background: white;
+    border-radius: 12px; /* More rounded corners for a softer look */
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    border-radius: 12px; /* Match the card's border radius */
+    max-height: 250px; /* Increase image height for better visibility */
+    width: 100%; /* Ensure image takes the full width */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.product-card h2 {
+    font-size: 1.5rem; /* Increase heading size */
+    color: #2c3e50; /* Deep Blue */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.product-card p {
+    font-size: 1.2rem; /* Font size for price */
+    color: #e67e22; /* Warm Orange */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.purchase-info {
+    font-size: 1rem; /* Adjust font size */
+    color: #2c3e50; /* Deep Blue */
+    margin-top: 10px; /* Spacing above the text */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align vertically */
+}
+
+.purchase-info a {
+    margin: 0 5px; /* Space around the icon */
+    color: #e67e22; /* Warm Orange */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.purchase-info a:hover {
+    color: #d35400; /* Darker Orange on hover */
+}
+
+/* Filter Section */
+.filter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.button-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent buttons from wrapping to the next line */
+    padding: 10px 0; /* Add padding for spacing */
+}
+
+.button-container button {
+    margin: 0 10px;
+    padding: 12px 20px; /* Increased padding for better touch targets */
+    border: none;
+    border-radius: 30px; /* Rounded buttons for a modern look */
+    background: linear-gradient(to right, #3d56a2, #8a7cc0);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    display: inline-block; /* Allow for better alignment */
+}
+
+.button-container button:hover {
+    background: linear-gradient(to right, #8a7cc0, #3d56a2);
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.button-container button:active {
+    transform: translateY(0); /* Return to original position on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow */
+}
+
+h1 {
+    font-size: 2.5rem; /* Large heading size */
+    color: #2c3e50; /* Deep Blue */
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem; /* Spacing between paragraphs */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for smaller screens */
+        padding: 12px;
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+    .purchase-info {
+        font-size: 11px;
+    }
+
+    /* .button-container {
+        padding: 10px 0; 
+    } */
+
+    /* .button-container button {
+        margin: 10px; 
+        min-width: 100px; 
+    } */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 2rem; /* Add padding for better spacing */
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+        padding: 0 1rem; /* Add padding for better text/image spacing */
+        margin-top: 25px;
+    }
+
+
+   
+    
+
+    .features {
+        display: grid; /* Change to grid for better arrangement */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+        gap: 1rem; /* Space between features */
+        padding: 1rem; /* Padding for features section */
+    }
+
+    .feature {
+        padding: 1rem;
+        border-radius: 8px; /* Rounded corners for features */
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    }
+
+    .feature:hover {
+        transform: translateY(-5px); /* Lift effect on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+
+    .feature i {
+        font-size: 2.5rem; /* Increase icon size */
+        color:#1c5ec9
+    }
+
+    .about {
+        padding: 2rem; /* Adjust padding for smaller screens */
+    }
+
+    .container-about {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem; /* Generous padding for spacious layout */
+     /* background: linear-gradient(to bottom right, #ecf0f1, #bdc3c7); */
+}
+
+.container-about {
+    max-width: 800px; /* Max width for content */
+    background: white; /* White background for the content */
+    border-radius: 15px; /* Rounded corners */
+    padding: 3rem; /* Padding for content */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+    text-align: center; /* Center text */
+}
+
+.container-about h1 {
+    font-size: 2.8rem; /* Larger heading size */
+    color: #2c3e50; /* Deep Blue */
+    margin-bottom: 1rem;
+    position: relative; /* For the underline effect */
+}
+
+.container-about h1::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 60px; /* Underline width */
+    background: #e67e22; /* Warm Orange */
+    margin: 0.5rem auto; /* Centering */
+    border-radius: 5px; /* Rounded edges */
+}
+
+.container-about h2 {
+    font-size: 2rem; /* Subheading size */
+    color: #2980b9; /* A contrasting color */
+    margin: 2rem 0 1rem; /* Spacing */
+}
+
+.container-about p {
+    margin-bottom: 1.5rem; /* Spacing between paragraphs */
+    color: #7f8c8d; /* Softer gray for text */
+    line-height: 1.6; /* Improved readability */
+}
+
+.container-about ul {
+    list-style-type: none; /* Remove default list styles */
+    padding-left: 0; /* Remove padding */
+    text-align: left; /* Align text left */
+    color: #2c3e50; /* Deep Blue */
+}
+
+.container-about ul li {
+    margin: 0.75rem 0; /* Space between list items */
+    font-size: 1.2rem; /* Adjust font size for list items */
+    position: relative; /* For the icon effect */
+    padding-left: 25px; /* Space for icon */
+}
+
+.container-about ul li::before {
+   
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem; /* Adjust icon size */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        padding: 4rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .container-about {
+        padding: 2rem; /* Adjust padding for smaller screens */
+    }
+
+    .container-about h1 {
+        font-size: 2.2rem; /* Adjust heading size for smaller screens */
+    }
+
+    .container-about h2 {
+        font-size: 1.5rem; /* Adjust subheading size for smaller screens */
+    }
+
+    .container-about ul li {
+        font-size: 1rem; /* Adjust font size for list items */
+    }
+}
+
+
+
+
+
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* background-color: #ecf0f1; */
+}
+
+.contact-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the two sections */
+    max-width: 1000px; /* Max width for the container */
+    width: 100%; /* Full width */
+    margin: auto; /* Center align */
+    border-radius: 10px; /* Rounded corners */
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  */
+}
+
+.contact-details, .contact-form {
+    flex: 1; /* Allow both sections to grow equally */
+    margin: 1rem; /* Margin for spacing */
+    background: white; /* White background for clarity */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2rem; /* Padding inside sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-details h1, .contact-form h1 {
+    font-size: 1.8rem; /* Larger heading size */
+    color: #2c3e50; /* Dark color for headings */
+    margin-bottom: 1rem; /* Margin below headings */
+}
+
+.contact-details p {
+    margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+/* Form Styles */
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 0.5rem; /* Space between label and input */
+    font-weight: bold; /* Bold text for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 0.75rem; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 1rem; /* Space below inputs */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #e67e22; /* Highlight border on focus */
+}
+
+button {
+    background-color: #e67e22; /* Warm Orange */
+    color: white;
+    padding: 0.75rem 1.5rem; /* Button padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s, transform 0.3s; /* Button effects */
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack sections on smaller screens */
+    }
+
+    .contact-details, .contact-form {
+        margin: 0; /* Remove margins on smaller screens */
+        margin-bottom: 1rem; /* Add space between stacked sections */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    /* background: linear-gradient(135deg, rgb(44, 62, 80), rgb(74, 94, 99));  */
+    background: linear-gradient(135deg, rgb(49, 47, 105), rgb(44, 47, 77)); 
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    width: 100%; /* Full width */
+    height: 35px;
+    padding-top: 5px;
+    bottom: 0; /* Align to the bottom */
+    position: fixed; /* Fix footer at the bottom */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+
+
+.ft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #fff; /* Warm Orange */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.icn {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-left: 25px;
+}
+
+
+

@@ -1,0 +1,242 @@
+[
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "HP",
+        "model": "Pavilion 15",
+        "price": "$499.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "Dell",
+        "model": "XPS 13",
+        "price": "$999.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/617Af4lsBNL._SX679_.jpg",
+        "brand": "Lenovo",
+        "model": "IdeaPad 3",
+        "price": "$399.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "Apple",
+        "model": "MacBook Air",
+        "price": "$999.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "HP",
+        "model": "Envy x360",
+        "price": "$749.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/617Af4lsBNL._SX679_.jpg",
+        "brand": "Dell",
+        "model": "Inspiron 15",
+        "price": "$599.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "Lenovo",
+        "model": "ThinkPad X1",
+        "price": "$1399.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "Apple",
+        "model": "MacBook Pro",
+        "price": "$1299.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "HP",
+        "model": "Omen 15",
+        "price": "$1299.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "Dell",
+        "model": "Alienware m15",
+        "price": "$1999.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/617Af4lsBNL._SX679_.jpg",
+        "brand": "Lenovo",
+        "model": "Yoga 7i",
+        "price": "$849.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "Apple",
+        "model": "iPad Pro",
+        "price": "$1099.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "HP",
+        "model": "Spectre x360",
+        "price": "$1399.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/617Af4lsBNL._SX679_.jpg",
+        "brand": "Dell",
+        "model": "Latitude 7420",
+        "price": "$1399.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "Lenovo",
+        "model": "Legion 5",
+        "price": "$1199.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "Apple",
+        "model": "iMac 24-inch",
+        "price": "$1299.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "HP",
+        "model": "ProBook 450",
+        "price": "$799.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "Dell",
+        "model": "Vostro 14",
+        "price": "$599.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/617Af4lsBNL._SX679_.jpg",
+        "brand": "Lenovo",
+        "model": "ThinkBook 14s",
+        "price": "$699.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "Apple",
+        "model": "Mac Mini",
+        "price": "$699.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "HP",
+        "model": "Elite Dragonfly",
+        "price": "$1599.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/617Af4lsBNL._SX679_.jpg",
+        "brand": "Dell",
+        "model": "Precision 5550",
+        "price": "$2399.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "Lenovo",
+        "model": "Flex 5",
+        "price": "$629.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "Apple",
+        "model": "MacBook Air M1",
+        "price": "$999.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "HP",
+        "model": "Chromebook x360",
+        "price": "$349.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "Dell",
+        "model": "G5 Gaming Laptop",
+        "price": "$999.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/617Af4lsBNL._SX679_.jpg",
+        "brand": "Lenovo",
+        "model": "ThinkPad E15",
+        "price": "$749.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "Apple",
+        "model": "AirPods Max",
+        "price": "$549.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "HP",
+        "model": "Envy 14",
+        "price": "$849.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/617Af4lsBNL._SX679_.jpg",
+        "brand": "Dell",
+        "model": "XPS 15",
+        "price": "$1299.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "Lenovo",
+        "model": "IdeaPad Flex 5",
+        "price": "$599.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "Apple",
+        "model": "iPhone 13",
+        "price": "$799.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "HP",
+        "model": "Spectre 14",
+        "price": "$1099.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "Dell",
+        "model": "Latitude 9520",
+        "price": "$1799.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/617Af4lsBNL._SX679_.jpg",
+        "brand": "Lenovo",
+        "model": "ThinkPad L14",
+        "price": "$849.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "Apple",
+        "model": "iPhone 14",
+        "price": "$899.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "HP",
+        "model": "ProBook 455",
+        "price": "$699.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/617Af4lsBNL._SX679_.jpg",
+        "brand": "Dell",
+        "model": "Inspiron 13",
+        "price": "$599.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71Zfo328qSL._SX679_.jpg",
+        "brand": "Lenovo",
+        "model": "Yoga C740",
+        "price": "$749.99"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71tSrDl1TaL._SX679_.jpg",
+        "brand": "Apple",
+        "model": "iPad Air",
+        "price": "$599.99"
+    }
+]

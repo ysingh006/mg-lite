@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us for inquiries about our refurbished laptops.">
+    <title>Contact Us - Refurbished Laptops</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <span class="logo">
+        <a href="index.html">
+            <img src="mg.png" alt="Laptop Icon" class="icon">
+        </a>
+        <a href="index.html" style="color: white; text-decoration: none;">MG</a>
+    </span>
+    
+    <nav role="navigation">
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="products.html"><i class="fas fa-laptop"></i> Products</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <button class="hamburger" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+    </button>
+</header>
+
+<section class="contact">
+    <div class="contact-container">
+        <div class="contact-details">
+            <h1>Contact Details</h1>
+            <p><strong>Email:</strong> your-email@example.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Follow us on Instagram:</strong></p>
+            <p>
+                <a href="https://instagram.com/yourprofile" target="_blank" style="text-decoration: none; color: inherit;">
+                    <img src="instagram.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    Visit Instagram Page
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p class="ft">
+        <a href="https://instagram.com/yourprofile" target="_blank" class="ft">
+            <img src="instagram.png" class="icn" alt="Instagram Icon"> Visit Instagram Page
+        </a>
+    </p>
+</footer>
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

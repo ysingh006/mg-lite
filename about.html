@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about our mission to provide high-quality refurbished laptops.">
+    <title>About Us - Refurbished Laptops</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <span class="logo">
+            <a href="index.html">
+                <img src="mg.png" alt="Laptop Icon" class="icon">
+            </a>
+            <a href="index.html" style="color: white; text-decoration: none;">MG</a>
+        </span>
+        
+        <nav role="navigation">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="products.html"><i class="fas fa-laptop"></i> Products</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <button class="hamburger" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+<section class="about">
+    <div class="container-about">
+        <h1>About Our Business</h1>
+        <p>We specialize in providing high-quality refurbished laptops at affordable prices. Our goal is to offer top-notch laptops with reliable performance. We work closely with certified refurbishers to ensure that every laptop meets our quality standards.</p>
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>✅ Trusted Refurbished Products</li>
+            <li>✅ Money Back Guarantee</li>
+            <li>✅ Free Delivery on Orders Over $50</li>
+            <li>✅ 24/7 Customer Support</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p class="ft">
+        <a href="https://instagram.com/yourprofile" target="_blank" class="ft">
+            <img src="instagram.png" class="icn" alt="Instagram Icon"> Visit Instagram Page
+        </a>
+    </p>
+</footer>
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
